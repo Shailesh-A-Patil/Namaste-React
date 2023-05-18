@@ -1,7 +1,9 @@
 #Episode -01
+
     -adding cdn link and creating HTML tags using React and reactDOM.
 
 #Episode -02 Igniting the App.
+
     - Manually create react app
     - Add Package.json with "npm init"
     - Install Parcel bundler
@@ -19,3 +21,10 @@
         - caching for faster builds
         - Error handling 
         - Treee shaking (remove unsed code)....
+
+#Episode -03
+    - Understand JSX
+    - Creating React elements
+    - Creating React functional components
+    - using element and component
+    - Babel and it's benifits

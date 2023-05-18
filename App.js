@@ -1,10 +1,22 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+import React from "react"
+import ReactDOM from "react-dom/client"
 
-const parent = React.createElement("div", {},
- [React.createElement("h1", {}, 'I am h1 tag') , React.createElement("h2", {}, 'I am h2 tag')
-]);
+// React element
+const title = <h1>Title from JSX</h1>
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+// calling react element in component
+const FirstComponent = () => <div id="first">{title}</div>
 
-root.render(parent);
+// component composition
+// JSX can not have two parent tag so we use empty tag
+const SecondComponent = () => (
+  <>
+    <FirstComponent />
+    <p>Second component</p>
+  </>
+)
+
+const root = ReactDOM.createRoot(document.getElementById("root"))
+
+// calling component in render
+root.render(<SecondComponent />)
